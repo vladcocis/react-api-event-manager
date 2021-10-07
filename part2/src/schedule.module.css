@@ -1,0 +1,72 @@
+/**
+ * Styling for schedule
+ *
+ * @author Vlad Cocis
+ */
+body {
+    padding: 15px 15px;
+}
+
+.schedule {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 3em;
+}
+
+.schedule td,
+.schedule thead {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.schedule tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.schedule tbody tr:hover {
+    background-color: #ddd;
+}
+
+.schedule thead {
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkblue;
+    color: white;
+}
+
+.day {
+    width: 100%;
+    
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.tableDiv {
+    
+    order:8;
+    flex-basis:25%;
+}
+
+.buttonDiv {
+    order:1;
+    width:25%;
+}
+
+.showDay:hover {
+    background-color: #111;
+   }
+
+.showDay{
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.selected {
+    background-color: #111;
+  }
